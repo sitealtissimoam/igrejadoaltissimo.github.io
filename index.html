@@ -15,6 +15,7 @@
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
+            overflow-x: hidden;
         }
         .container {
             display: none;
@@ -23,12 +24,13 @@
             left: 0;
             width: 100%;
             height: 100%;
+            overflow-y: auto;
             background-size: cover;
             background-position: center;
         }
         .active {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             animation: fadeIn 1s;
         }
@@ -39,6 +41,7 @@
         .content {
             width: 90%;
             max-width: 600px;
+            margin: 20px auto;
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 10px;
@@ -193,6 +196,7 @@
             <img src="https://i.imgur.com/HG13DlT.jpeg" alt="Topo">
             <h2>SUA INSCRIÇÃO FOI REALIZADA COM SUCESSO</h2>
             <p id="mensagem-final"></p>
+            <p>Agora tire um print e marque a gente nas redes sociais: <strong>@igrejadoaltissimo.am</strong></p>
             <button class="button" onclick="goToPage('page-2')">Voltar para inscrição</button>
             <button class="button" onclick="goToPage('page-1')">Voltar ao início</button>
         </div>
