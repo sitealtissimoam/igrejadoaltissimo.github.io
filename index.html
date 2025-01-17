@@ -1,4 +1,3 @@
-HTMLResultado Pular resultados Iframe
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -107,6 +106,7 @@ HTMLResultado Pular resultados Iframe
             const name = form.querySelector('input[name="nome"]').value;
             document.getElementById('successMessage').textContent = `${name}, agora você está preparado(a) para viver o sobrenatural de Deus.`;
             showPage('page3');
+            event.preventDefault(); // Prevent default form submission
         }
     </script>
 </head>
@@ -123,7 +123,7 @@ HTMLResultado Pular resultados Iframe
 
     <!-- Página 2 -->
     <div id="page2" class="page" style="background-image: url('https://i.imgur.com/D2l37iT.jpeg');">
-        <div class="container">
+        <div class="container" style="max-height: 90vh; overflow-y: auto;">
             <img src="https://i.imgur.com/rpCBl2W.png" alt="Logo EGD">
             <h1>INSCRIÇÃO EGD 2025</h1>
             <form id="registrationForm" class="form" onsubmit="validateForm(event)" action="https://formspree.io/f/mnnnwpap" method="POST" target="_blank">
@@ -170,6 +170,3 @@ HTMLResultado Pular resultados Iframe
 
 </body>
 </html>
-
-
-Recursos
