@@ -96,12 +96,12 @@
             width: 90%;
         }
         .imagem-menor {
-            width: 900px; /* ou height */
+            width: 100%;
+            max-width: 900px;
             border-radius: 30px;
         }
         .texto-grande {
             font-size: 25px;
-            height: 60px;
         }
         .texto-2 {
             height: 50px;
@@ -155,19 +155,23 @@
             background-color:#00000059;
         }
         .termo-container {
+            width: px; ;
+            @media max-width: 600px;
             display: flex;
-            flex-direction: row-reverse; /* inverte a ordem: texto vem antes */
-            align-items:center;
-            margin-left: 95px
+            flex-direction: row-reverse;
+            align-items:flex-start;
+            margin-left: 10px
         }
         .checkbox-estilizada {
+            max-width: 600px;
             transform: scale(1.1);
             accent-color: #00bfff;
             border-radius: 0%; /* se quiser deixar redonda */
-            margin-top: 5px;
+            margin-top: 4px;
         } 
         .texto-termo {
-            margin-right: 80px;
+            width: 600px;
+            margin-right: 50px;
             white-space: nowrap;
         }
         .video-galeria {
