@@ -102,6 +102,7 @@
         }
         .texto-grande {
             font-size: 25px;
+            height: 60px;
         }
         .texto-2 {
             height: 50px;
@@ -155,23 +156,21 @@
             background-color:#00000059;
         }
         .termo-container {
-            width: px; ;
-            @media max-width: 600px;
+            width: auto;
+            max-width: 600px;
             display: flex;
-            flex-direction: row-reverse;
-            align-items:flex-start;
-            margin-left: 10px
+            flex-direction: row-reverse; /* inverte a ordem: texto vem antes */
+            align-items:center;
+            margin-left: 95px
         }
         .checkbox-estilizada {
-            max-width: 600px;
             transform: scale(1.1);
             accent-color: #00bfff;
             border-radius: 0%; /* se quiser deixar redonda */
-            margin-top: 4px;
+            margin-top: 5px;
         } 
         .texto-termo {
-            width: 600px;
-            margin-right: 50px;
+            margin-right: 0px;
             white-space: nowrap;
         }
         .video-galeria {
@@ -247,6 +246,30 @@
             color: #ffffff;
             text-align: center;
         }
+        .intro{
+            width: 600pxpx;
+            max-width: 600px;
+            height: 40px;
+            font-size: 25px;
+        }
+        .intro2{
+            width: 600pxpx;
+            max-width: 600px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .intro3{
+            width: 600pxpx;
+            max-width: 600px;
+            height: 25px;
+            font-size: 20px;
+        }
+        .intro4{
+            width: 600pxpx;
+            max-width: 600px;
+            height: 40px;
+            font-size: 20px;
+        }
 
 
     </style>
@@ -296,19 +319,30 @@
     <div id="page2" class="page" style="background-image: url('2_20250120_102414_0001.png');">
         <div class="container" style="max-height: 90vh; overflow-y: auto;">
             <img src="site tpo.png" alt="Logo EGD" class="imagem-menor">
-            <div class="highlight-box2">
-            <div class="texto-grande"><h1>INSCRIÇÃO EGD 2026</h1></div> 
-            <div class="texto-2">ENCONTRO GERANDO DISCÍPULOS 2026</div>
-        </div>
-        <div class="highlight-box3">
-            <div class="text4"><h1>NÃO FOI PARA O ENCONTRO?<h1></div>
-                <div class="text5"><h3>OLHA SÓ O QUE ESTÁ ESPERANDO POR VOCÊ👇</h3></div>
-        </div>
-        <br>
+            <br>
+            <div class="intro">
+                <h1>INSCRIÇÃO EGD 2026</h1>
+            </div>
+            <div class="intro2">
+                    <h3>ENCONTRO GERANDO DÍCIPULOS</h3>
+                    </div>
+                    <hr>
+                    <div class="intro3">
+                        <h1>NÃO FOI PARA O ENCONTRO?</h1>
+                    </div>
+                    <div class="intro4">
+                        <h3>OLHA SÓ O QUE ESTÁ ESPERANDO POR VOCÊ:</h3>
+                    </div>
+                    <hr>
+                    <br>
         <div class="video-galeria">
             <video class="video-quadrado" src="video 1.mp4" onclick="abrirModal(this.src)" muted></video>
             <video class="video-quadrado" src="video 2.mp4" onclick="abrirModal(this.src)" muted></video>
             <video class="video-quadrado" src="video 3.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="video 1.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="video 1.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="video 2.mp4" onclick="abrirModal(this.src)" muted></video>
+            
           </div>
           <!-- Modal (oculto por padrão) -->
           <div id="modalVideo" class="modal" style="display: none;">
