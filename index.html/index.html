@@ -34,15 +34,16 @@
         }
         .container {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(10px);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             max-width: 600px;
             width: 90%;
-            box-shadow: 0 4px 30px rgb(0, 0, 0);
-            border: 2px solid rgb(0, 225, 255);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.199);
+            animation: fadeIn 1s;
+            display: block;
         }
         .container img {
             max-width: 100%;
@@ -140,7 +141,7 @@
             border-radius: 20px;
         }
         .video-ajustado{
-            width: 100%;
+            width: 700%;
             max-width: 700px;
             height: auto;
             border-radius: 16px; /* aqui é a borda arredondada */
@@ -173,7 +174,7 @@
             margin-right: 0px;
             white-space: nowrap;
         }
-        .video-galeria {
+        .video-galeria {         
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -181,8 +182,8 @@
 }
 
 .video-quadrado {
-  width: 170px;
-  height: 170px;
+  width: 125px;
+  height: 125px;
   object-fit: cover;
   border-radius: 12px;
   cursor: pointer;
@@ -210,8 +211,9 @@
 }
 
 .modal video {
-  width: 80%;
-  max-width: 800px;
+  position: absolute;
+  width: 350%;
+  max-width: 350px;
   border-radius: 20px;
 }
 
@@ -252,6 +254,9 @@
             display: flex;
             text-align: center;
         }
+        .banners{
+            border-radius: 30px;
+        }
 
 
     </style>
@@ -288,7 +293,7 @@
 <body>
 
     <!-- Página 1 -->
-    <div id="page1" class="page active" style="background-image: url('fundo\ site.png');">
+    <div id="page1" class="page active" style="background-image: url('floresta.jpg');">
         <div class="container">
             <img src="site tpo.png" alt="Logo EGD" class="imagem-page1">
             <div class="texto-page2"><h3>VOCÊ ESTÁ PRESTES A INICIAR A SUA INSCRIÇÃO PARA O EGD 2026</h3></div>
@@ -298,21 +303,20 @@
     </div>
 
     <!-- Página 2 -->
-    <div id="page2" class="page" style="background-image: url('2_20250120_102414_0001.png');">
+    <div id="page2" class="page" style="background-image: url('floresta.jpg');">
         <div class="container" style="max-height: 90vh; overflow-y: auto;">
             <img src="site tpo.png" alt="Logo EGD" class="imagem-menor">
-        <p style="font-size: 50px;"><strong>INSCRIÇÃO EGD 2026</strong></p>
-        <hr>
+        <p style="font-size: 50px;"><strong>INSCRIÇÃO <br> EGD 2026</strong></p> <hr>
         <div class="video-galeria">
-            <div class="textos"><strong>TRÊS DIAS FACE A FACE 👇</strong></div>
-            <video class="video-quadrado" src="video 1.mp4" onclick="abrirModal(this.src)" muted></video>
-            <video class="video-quadrado" src="video 2.mp4" onclick="abrirModal(this.src)" muted></video>
-            <video class="video-quadrado" src="video 3.mp4" onclick="abrirModal(this.src)" muted></video>
-           <div class="textos"><strong>DISCÍPULOS DE HONRA 👇</strong></div>
-            <video class="video-quadrado" src="video 1.mp4" onclick="abrirModal(this.src)" muted></video>
-            <video class="video-quadrado" src="video 1.mp4" onclick="abrirModal(this.src)" muted></video>
-            <video class="video-quadrado" src="video 2.mp4" onclick="abrirModal(this.src)" muted></video>
-            <div class="textos"><strong>VOLTA DO ENCONTRO 👇</strong></div>
+            <img src="EGD.png" alt="banners" class="banners">
+            <video class="video-quadrado" src="EGD.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="EGD2.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="EGD3.mp4" onclick="abrirModal(this.src)" muted></video>
+            <img src="DISCIPULO.png" alt="banners" class="banners">
+            <video class="video-quadrado" src="HONRA1.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="HONRA2.mp4" onclick="abrirModal(this.src)" muted></video>
+            <video class="video-quadrado" src="HONRA1.mp4" onclick="abrirModal(this.src)" muted></video>
+            <img src="CHEGADA.png" alt="banners" class="banners">
             <video class="video-quadrado" src="CHEGADA1.mp4" onclick="abrirModal(this.src)" muted></video>
             <video class="video-quadrado" src="CHEGADA2.mp4" onclick="abrirModal(this.src)" muted></video>
             <video class="video-quadrado" src="CHEGADA3.mp4" onclick="abrirModal(this.src)" muted></video>
