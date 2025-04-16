@@ -195,27 +195,26 @@
 }
 
 .modal {
-  transform: scale(0.7);
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  background: rgba(0,0,0,0.85);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed; /* Fica por cima da tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
   z-index: 999;
   border-radius: 20px;
+  top: 70%;
 }
 
 .modal video {
-  position: absolute;
-  width: 350%;
-  max-width: 350px;
+  width: 90%;
+  max-width: 600px;
   border-radius: 20px;
 }
+
 
 .fechar {
   position: absolute;
